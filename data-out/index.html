@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+<!-- custom css -->
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+text {
+  font-family: Segoe UI;
+  font-weight: 400;
+}
+
+text.subtitle {
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 14px;
+  fill: #333;
+  stroke: none;
+}
+
+text.title {
+  font-family: Palatino Linotype;
+  font-size: 28px;
+  font-weight: 700;
+  fill: #333;
+  stroke: none;
+}
+
+text.footnote {
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 12px;
+  fill: #777;
+  stroke: none;
+}
+
+
+
+h1 {
+  font-size: 28px;
+}
+
+.footnote {
+  font-size: 11px;
+}
+
+.d3-tip {
+  text-align: center;
+  padding:5px;
+  display:inline-block;
+  background-color: #fff;
+  left: 0px;
+  top: 0px;
+  font-size: 12px;
+  line-height: 1.2;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  position: absolute;
+  pointer-events:none;
+  color:#777;
+  z-index: 9999;
+}
+
+.d3-tip-value {
+  font-size:18px;
+  color:#333;
+}
+</style>
+</head>
+<body>
+  <div style="padding:30px">
+    <div id="bar3-container"></div>
+  </div>
+  
+  <!-- scripts -->
+  <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+  <script>
+  
+  var parseTime = d3.timeParse("%Y-%m-%d");
+  
+  var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "d3-tip")
+    .style("opacity", 0)
+    .style("pointer-events", "none")
+    .on("click", function() {
+      d3.select(this)
+        .style("opacity", 0)
+        .style("pointer-events", "none");
+    });
+  
+  d3.selection.prototype.first = function() {
+    return d3.select(this.nodes()[0][0]);
+  };
+  
+  d3.selection.prototype.last = function() {
+    return d3.select(this.nodes()[this.size() - 1]);
+  };
+  
+  function wrap(text, width) {
+    text.each(function () {
+        var text = d3.select(this),
+            words = text.text().split(/\s+/).reverse(),
+            word,
+            line = [],
+            lineNumber = 0,
+            lineHeight = 1.3, // ems
+            x = text.attr("x"),
+            y = text.attr("y"),
+            dy = 0, //parseFloat(text.attr("dy")),
+            tspan = text.text(null)
+                        .append("tspan")
+                        .attr("x", x)
+                        .attr("y", y)
+        while (word = words.pop()) {
+            line.push(word);
+            tspan.text(line.join(" "));
+            if (tspan.node().getComputedTextLength() > width) {
+                line.pop();
+                tspan.text(line.join(" "));
+                line = [word];
+                tspan = text.append("tspan")
+                            .attr("x", x)
+                            .attr("y", y)
+                            .attr("dy", ++lineNumber * lineHeight + dy + "em")
+                            .text(word);
+            }
+        }
+        
+        if (lineNumber > 0) {
+          const startDy = -(lineNumber * (lineHeight / 2));  // here was the issue
+          text
+            .selectAll("tspan")
+            .attr("dy", (d, i) => startDy + lineHeight * i + "em");
+        }
+    });
+}
+  
+  function ordinal_suffix_of(i) {
+      var j = i % 10,
+          k = i % 100;
+      if (j == 1 && k != 11) {
+          return i + "st";
+      }
+      if (j == 2 && k != 12) {
+          return i + "nd";
+      }
+      if (j == 3 && k != 13) {
+          return i + "rd";
+      }
+      return i + "th";
+  }
+  
+  function padScale (scale, padding) {
+    const doughmain = scale.domain();
+    if (!Array.isArray(padding) || typeof scale.invert !== 'function') {
+      return doughmain.slice();
+    }
+  
+    const paddedDomain = doughmain.slice();
+    const pl = padding.length;
+    for (let i = 0; i < pl; i++) {
+      const sign = i === 0 ? -1 : 1;
+      const isTime = Object.prototype.toString.call(doughmain[i]) === '[object Date]';
+  
+      const parts = [doughmain[i], scale.invert(padding[i]), scale.invert(0)].map(function(d) {
+        return isTime ? d.getTime() : d;
+      });
+      paddedDomain[i] = [parts[0] + Math.abs(parts[1] - parts[2]) * sign].map(function(d) {
+        return isTime ? new Date(d) : d;
+      })[0];
+    }
+    return paddedDomain;
+  };
+  
+  var color1 = "#99475f";
+  
+  drawChart3();
+  
+  function drawChart3() {
+    var div = d3.select("#bar3-container"),
+        divwidth = 550,
+        margin = { top: 235, right: 40, bottom: 73, left: 46 },
+        width = divwidth - margin.left - margin.right,
+        height = 420,
+        svg = div.append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+          .attr("role", "img")
+          .attr("aria-label", "");
+          
+    
+          
+    const defs = svg.append("defs");
+          
+    // Create gradient definition
+    const gradient = defs.append("linearGradient")
+      .attr("id", "fadeGradient")
+      .attr("gradientUnits", "userSpaceOnUse")  // Add this
+      .attr("x1", -16)  // Match your line's x1
+      .attr("y1", 0)
+      .attr("x2", 25)   // Match your line's x2  
+      .attr("y2", 0);
+    
+    // Add gradient stops
+    gradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "#ddd")
+      .attr("stop-opacity", 1);        // Fully opaque at start
+    
+    // Add gradient stops
+    gradient.append("stop")
+      .attr("offset", "40%")
+      .attr("stop-color", "#ddd")
+      .attr("stop-opacity", 1);        // Fully opaque at start
+        
+    gradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "#ddd")
+      .attr("stop-opacity", 0);        // Transparent at end
+          
+    // Create gradient definition
+    const gradient2 = defs.append("linearGradient")
+      .attr("id", "fadeGradient2")
+      .attr("gradientUnits", "userSpaceOnUse")  // Add this
+      .attr("x1", 0)  // Match your line's x1
+      .attr("y1", -16)
+      .attr("x2", 0)   // Match your line's x2  
+      .attr("y2", 25);
+    
+    // Add gradient stops
+    gradient2.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "#ddd")
+      .attr("stop-opacity", 0);        // Fully opaque at start
+    
+    // Add gradient stops
+    gradient2.append("stop")
+      .attr("offset", "40%")
+      .attr("stop-color", "#ddd")
+      .attr("stop-opacity", 1);        // Fully opaque at start
+        
+    gradient2.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "#ddd")
+      .attr("stop-opacity", 1);        // Transparent at end
+        
+    var g = svg.append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+          
+    g.append("rect")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("width", margin.left + width + margin.right)
+      .attr("height", margin.top + height + margin.bottom)
+      .style("fill", "#fff");
+          
+    g.append("text")
+      .attr("class", "title")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("dy", 30)
+      .text("The BLS initial jobs estimates are closely");
+          
+    g.append("text")
+      .attr("class", "title")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("dy", 64)
+      .text("aligned with actual employment changes");
+          
+    g.append("text")
+      .attr("class", "subtitle")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("dy", 93)
+      .text("QCEW and CES monthly changes, Feb. 2003 to Dec. 2024. 2020 excluded.");
+          
+    g.append("text")
+      .attr("class", "subtitle")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("dy", 111)
+      .text("Both series have been adjusted to remove conceptual differences.");
+          
+    g.append("text")
+      .attr("class", "subtitle")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("dy", 143)
+      .text("The CES estimate is the early survey-based estimate that is released in the monthly");
+          
+    g.append("text")
+      .attr("class", "subtitle")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("dy", 161)
+      .text("jobs report, while the QCEW count is the actual change according to administrative");
+          
+    g.append("text")
+      .attr("class", "subtitle")
+      .attr("x", -margin.left)
+      .attr("y", -margin.top)
+      .attr("dy", 179)
+      .text("records that are available several months later.");
+          
+    g.append("text")
+      .attr("class", "footnote")
+      .attr("x", -margin.left)
+      .attr("y", height + margin.bottom)
+      .attr("dy", -3)
+      .text("Chart by David Waldron, waldrn.com. Data: Bureau of Labor Statistics");
+      
+    d3.queue()
+      .defer(d3.csv, 'ces-accuracy.csv')
+      .defer(d3.csv, 'ces-accuracy-mod1.csv')
+      .await(ready);
+      
+    function ready(error, data, modeldata) {
+      if (error) throw error;
+      
+      data.forEach(d => {
+        d.date = parseTime(d.date);
+        return(d);
+      });
+      
+      color1 = "#18a195";
+      
+      data = data.filter(d => d.ces_tot_otm !== "" & d.date.getFullYear() != 2020);
+        
+      var xScale = d3.scaleLinear()
+        .domain([-1500,1500])
+        .range([0, width]);
+        
+      var yScale = d3.scaleLinear()
+        .domain([-1500,1500])
+        .range([height, 0]);
+          
+      var yAxis = g.append("g")
+        .call(d3.axisLeft(yScale)
+          .ticks(7)
+          .tickFormat(e => (e > 0 ? "+" : "") + (e === 0 ? e : (Math.abs(e) < 1000 ? e + "K" : (e / 1000) + "M")) + (e === yScale.domain()[yScale.domain().length - 1] ? " jobs" : "")));
+          
+      yAxis.append("text")
+        .attr("x", -40)
+        .attr("y", -19)
+        .style("text-anchor", "start")
+        .style("fill", "#444")
+        .style("font-size", "12px")
+        .style("font-weight", 700)
+        .text("QCEW over-the-month change");
+        
+      yAxis.select(".domain").remove();
+      yAxis.selectAll(".tick")
+        .select("text")
+        .attr("x", -40)
+        .attr("dy", -4)
+        .style("text-anchor", "start")
+        .style("fill", "#777")
+        .style("font-size", "12px");
+      yAxis.selectAll(".tick")
+        .select("line")
+        .attr("x1", -40)
+        .attr("x2", width)
+        .attr("stroke", d => d === 0 ? "#bbb" : "#eee")
+        
+      var xAxis = g.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(xScale)
+          .ticks(7)
+          .tickFormat(e => (e > 0 ? "+" : "") + (e === 0 ? e : (Math.abs(e) < 1000 ? e + "K" : (e / 1000) + "M"))));
+          
+      xAxis.append("text")
+        .attr("x", width / 2)
+        .attr("y", 40)
+        .style("text-anchor", "middle")
+        .style("fill", "#444")
+        .style("font-size", "12px")
+        .style("font-weight", 700)
+        .text("CES initial estimate of over-the-month change");
+          
+      xAxis.select(".domain").remove();
+      xAxis.selectAll(".tick")
+        .select("text")
+        .style("fill", "#777")
+        .style("font-size", "12px");
+      xAxis.selectAll(".tick")
+        .select("line")
+        .attr("y2", -height)
+        .attr("stroke", d => d === 0 ? "#bbb" : "#eee")
+        
+      var beta0 = +modeldata[0]["beta0"];
+      var beta1 = +modeldata[0]["beta1"];
+      var adjr2 = +modeldata[0]["r2"];
+        
+      g.append("line")
+        .attr("id", "estimated-line")
+        .attr("x1", xScale(Math.max((yScale.domain()[0] - beta0)/beta1, xScale.domain()[0])))
+        .attr("y1", yScale(Math.max((beta1 * xScale.domain()[0] + beta0), yScale.domain()[0])))
+        .attr("x2", xScale(Math.min((yScale.domain()[1] - beta0)/beta1, xScale.domain()[1])))
+        .attr("y2", yScale(Math.min((beta1 * xScale.domain()[1] + beta0), yScale.domain()[1])))
+        .style("stroke", color1)
+        .style("stroke-width", 2)
+        .style("stroke-dasharray", "5 3");
+        
+      g.append("line")
+        .attr("id", "perfect-line")
+        .attr("x1", xScale(xScale.domain()[0]))
+        .attr("y1", yScale(yScale.domain()[0]))
+        .attr("x2", xScale(xScale.domain()[1]))
+        .attr("y2", yScale(yScale.domain()[1]))
+        .style("stroke", "#444")
+        .style("stroke-width", 1.5)
+        .style("stroke-dasharray", "4 4");
+        
+      var dot = g.selectAll("g.dot")
+        .data(data)
+        .enter()
+        .append("g")
+        .attr("class", "dot")
+        .attr("transform", d => "translate(" + xScale(d.ces_tot_otm) + "," + yScale(d.qcew_tot_otm_sa) + ")");
+      
+      dot.append("circle")
+        .attr("r", 2.5)
+        .attr("cx", 0)
+        .attr("cy", 0)
+        .style("stroke", "none")
+        .style("fill", color1)
+        .style("fill-opacity", 0.5);
+        
+      g.append("text")
+        .attr("dy", "-5px")
+        .append("textPath")
+        .attr("xlink:href", "#perfect-line")
+        .attr("startOffset", "3%")
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 4)
+        .attr("fill", "#fff")
+        .attr("font-size", "12px")
+        .attr("font-weight", "700")
+        .attr("letter-spacing", 2)
+        .text("Perfect agreement");
+        
+      g.append("text")
+        .attr("dy", "-5px")
+        .append("textPath")
+        .attr("xlink:href", "#perfect-line")
+        .attr("startOffset", "3%")
+        .attr("fill", "#444")
+        .attr("font-size", "12px")
+        .attr("font-weight", "700")
+        .attr("letter-spacing", 2)
+        .text("Perfect agreement");
+        
+      var reglinelab = g.append("g")
+        .attr("transform", "translate(93," + (height - 55) + ")");
+        
+      reglinelab.append("text")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("dy", "5px")
+        .style("stroke", "#fff")
+        .style("stroke-width", 4)
+        .style("fill", "#fff")
+        .style("font-size", "12px")
+        .style("font-weight", "700")
+        .text("Estimated relationship");
+        
+      reglinelab.append("text")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("dy", "5px")
+        .style("fill", color1)
+        .style("font-size", "12px")
+        .style("font-weight", "700")
+        .text("Estimated relationship");
+        
+      reglinelab.append("text")
+        .attr("x", 0)
+        .attr("y", 16)
+        .attr("dy", "5px")
+        .style("stroke", "#fff")
+        .style("stroke-width", 4)
+        .style("fill", "#fff")
+        .style("font-size", "12px")
+        .text("QCEW = " + d3.format(".1f")(beta0) + "K + " + d3.format(".2f")(beta1) + " × CES");
+        
+      reglinelab.append("text")
+        .attr("x", 0)
+        .attr("y", 16)
+        .attr("dy", "5px")
+        .style("fill", color1)
+        .style("font-size", "12px")
+        .text("QCEW = " + d3.format(".1f")(beta0) + "K + " + d3.format(".2f")(beta1) + " × CES");
+        
+      reglinelab.append("text")
+        .attr("x", 0)
+        .attr("y", 32)
+        .attr("dy", "5px")
+        .style("stroke", "#fff")
+        .style("stroke-width", 4)
+        .style("fill", "#fff")
+        .style("font-size", "12px")
+        .text("Adj. R-squared = " + d3.format(".2f")(adjr2));
+        
+      reglinelab.append("text")
+        .attr("x", 0)
+        .attr("y", 32)
+        .attr("dy", "5px")
+        .style("fill", color1)
+        .style("font-size", "12px")
+        .text("Adj. R-squared = " + d3.format(".2f")(adjr2));
+    };
+  };
+  </script>
+</body>
